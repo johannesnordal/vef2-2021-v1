@@ -1,0 +1,14 @@
+<div class="poster">
+    <div class="poster-poster"> 
+        <a href=<%= video.id %>>
+            <img class="poster-img" src="<%= video.poster %>" />
+        </a>
+        <p class="poster-duration"><%= locals.secToMinSec(video.duration) %></p>
+    </div>
+    <a href=<%= video.id %>>
+        <div class="poster-title">
+            <h3><%= video.title %></h3>
+        </div>
+    </a>
+    <p class="poster-created">Fyrir <%= locals.timeElapsed(video.created) %> síðan</p>
+</div>

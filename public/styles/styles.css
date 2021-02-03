@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html {
+  box-sizing: border-box;
+  display: flex;
+  font-family: 'Merriweather', serif;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.page-title {
+  padding: 3rem;
+  text-align: center;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.poster {
+  display: flex;
+  flex-basis: 12rem;
+  flex-direction: column;
+}
+
+.poster-poster {
+  position: relative;
+}
+
+.poster-img {
+  max-height: 15rem;
+}
+
+.poster-duration {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 2.5%;
+  color: rgb(240, 255, 255);
+  left: 85%;
+  padding: 2px;
+  position: absolute;
+}
+
+.video-related {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-player {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+video {
+  max-width: 50%;
+}
+
+.video-back {
+  padding: 5rem;
+}

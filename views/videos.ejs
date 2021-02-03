@@ -1,0 +1,19 @@
+<%- include('header') -%>
+
+<div class="video-player">
+  <video controls>
+    <source src="<%= video.video %>" type="video/mp4">
+  </video>
+</div>
+
+<div class="category">
+  <% video.related.sort();
+     video.related.forEach(id => {
+     const relatedVideo = data.videos.find(x => x.id === id); %>
+     <%- include('poster', {video: relatedVideo}) %>
+     <% }); %>
+</div>
+
+<a class="video-back" href="javascript:history.back()">Til baka</a>
+
+<%- include('footer') -%>

@@ -1,0 +1,17 @@
+<%- include('header') -%>
+
+<% data.categories.forEach(category => { %>
+
+<h2><%- `${category.title}` %></h2>
+
+<div class="category">
+  <% category.videos.sort();
+     category.videos.forEach(id => {
+     const video = data.videos.find(x => x.id === id); %>
+     <%- include('poster', {video: video}) %>
+     <% }); %>
+</div>
+
+<% }); %>
+
+<%- include('footer') -%>
